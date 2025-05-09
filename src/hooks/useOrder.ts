@@ -25,7 +25,7 @@ export default function useOrder() {
         setOrder([])
         setTip(0)
     }
-    
+
     return {
         order,
         tip,

@@ -14,7 +14,7 @@ const OrderContents = ({order, removeItem} : OrderContentsProps) => {
         <div className="space-y-3 mt-3">
             {
                 order.map(item => (
-                    <div 
+                    <div
                         key={item.id}
                         className="flex justify-between items-center border-t border-gray-200 p-3 last-of-type:border-b mb-0 hover:bg-green-100"
                     >
@@ -32,7 +32,7 @@ const OrderContents = ({order, removeItem} : OrderContentsProps) => {
 
                         <button
                             aria-label={`Eliminar consumo de ${item.name}`}
-                            className="bg-red-600 h-8 w-8 rounded-full text-white font-black cursor-pointer"
+                            className="bg-red-600 hover:bg-red-700 h-8 w-8 rounded-full text-white font-black cursor-pointer"
                             onClick={() => removeItem(item.id)}
                         >
                             X

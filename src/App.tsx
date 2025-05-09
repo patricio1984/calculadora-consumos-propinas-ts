@@ -29,26 +29,26 @@ function App() {
           </div>
         </div>
         <div className="p-5 space-y-5">
-          {order.length === 0 ? <p className="text-center flex items-center justify-center h-full font-bold text-2xl text-red-600">La orden está vacía</p> : 
+          {order.length === 0 ? <p className="text-center flex items-center justify-center h-full font-bold text-2xl text-red-600">La orden está vacía</p> :
             <>
-              <OrderContents 
+              <OrderContents
                 order={order}
                 removeItem={removeItem}
               />
 
-              <TipPercentageForm 
+              <TipPercentageForm
                 setTip={setTip}
                 tip={tip}
               />
-              
+
               <OrderTotals
-                order={order} 
+                order={order}
                 tip={tip}
                 placeOrder={placeOrder}
               />
-            </> 
+            </>
           }
-        </div> 
+        </div>
       </main>
     </>
   )
