@@ -14,6 +14,7 @@ Una aplicación web desarrollada con React y TypeScript que permite calcular de 
 - [TypeScript](https://www.typescriptlang.org/)
 - [Vite](https://vitejs.dev/)
 - [ESLint](https://eslint.org/)
+- [TailwindCSS](https://tailwindcss.com/)
 
 ## 📦 Instalación
 
